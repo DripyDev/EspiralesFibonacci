@@ -49,38 +49,38 @@ public class CameraController : MonoBehaviour
         if(movimientoRecto){
             //Avanzamos
             if(Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))
-                cameraPos.position += new Vector3(0f,0f,1f);
+                cameraPos.position += new Vector3(0f,0f,0.1f);
             //Retrocedemos
             if(Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow))
-                cameraPos.position += new Vector3(0f,0f,-1f);
+                cameraPos.position += new Vector3(0f,0f,-0.1f);
             //Izquierda
             if(Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
-                cameraPos.position += new Vector3(-1f,0f,0f);
+                cameraPos.position += new Vector3(-0.1f,0f,0f);
             //Derecha
             if(Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
-                cameraPos.position += new Vector3(1f,0f,0f);
+                cameraPos.position += new Vector3(0.1f,0f,0f);
         }
         else{
             //Avanzamos
             if(Input.GetKey("w") || Input.GetKey(KeyCode.UpArrow))
-                cameraPos.position += this.transform.forward;//Avance en direccion a donde miramos
+                cameraPos.position += this.transform.forward*0.1f;//Avance en direccion a donde miramos
             //Retrocedemos
             if(Input.GetKey("s") || Input.GetKey(KeyCode.DownArrow))
-                cameraPos.position -= this.transform.forward;
+                cameraPos.position -= this.transform.forward*0.1f;
             //Izquierda
             if(Input.GetKey("a") || Input.GetKey(KeyCode.LeftArrow))
-                cameraPos.position -= this.transform.right;
+                cameraPos.position -= this.transform.right*0.1f;
             //Derecha
             if(Input.GetKey("d") || Input.GetKey(KeyCode.RightArrow))
-                cameraPos.position += this.transform.right;
+                cameraPos.position += this.transform.right*0.1f;
         }
         //Arriba
         if(Input.GetKey("space")){
-            cameraPos.localPosition += new Vector3(0f,1f,0f);
+            cameraPos.localPosition += new Vector3(0f,0.1f,0f);
         }
         //Abajo
         if(Input.GetKey(KeyCode.LeftControl)){
-            cameraPos.localPosition += new Vector3(0f,-1f,0f);
+            cameraPos.localPosition += new Vector3(0f,-0.1f,0f);
         }
     }
 
