@@ -16,8 +16,8 @@ En mi caso, he decidido implementarlo a través de un método conocido como las 
 Donde **goldenN** es el número aureo ((1+5<sup>0.5</sup>)/2), **N** el número de puntos que queremos repartir en la esfera de manera uniforme e **i** 
 el punto actual que estamos generando de entre 0 y N.
 
-Con la fórmula aclarada, simplemente debemos recorrer los N puntos e ir generando los puntos.
+Con la fórmula aclarada, simplemente debemos recorrer los N puntos e ir generando los puntos. En la siguiente imagen podemos ver 300 y 1000 puntos uniformemente generados en una esfera.
 
 300 puntos |  1000 puntos
 :-------------------------:|:-------------------------:
-![](https://user-images.githubusercontent.com/61519721/142774274-1f809923-dc5a-41b3-8756-1c2e9a007290.PNG)  |  ![](https://user-images.githubusercontent.com/61519721/142774273-da72f828-330d-4344-87ef-3eedf6649c92.PNG)
+![](https://user-images.githubusercontent.com/61519721/142776508-f1d4ba57-aa9b-4224-8683-d692483bdb5a.PNG)  |  ![](https://user-images.githubusercontent.com/61519721/142776507-c418b8ed-fa70-4d54-a9eb-1dcbdac5885d.PNG)
