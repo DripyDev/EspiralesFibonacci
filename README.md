@@ -7,7 +7,7 @@ Existen muchas maneras de abordar el problema, pero no voy a profundizar al resp
 - http://extremelearning.com.au/how-to-evenly-distribute-points-on-a-sphere-more-effectively-than-the-canonical-fibonacci-lattice/
 - https://newbedev.com/evenly-distributing-n-points-on-a-sphere
 
-En mi caso, he decidido implementarlo a través de un método conocido como las espirales de fibonacci. La fórmula para calcular N puntos alrededor de una esfera de radio 1 es:
+En mi caso, he decidido implementarlo a través de un método conocido como las **espirales de fibonacci**. La fórmula para calcular N puntos alrededor de una esfera de radio 1 es:
 
 + theta = 2*pi*(i/goldenN)
 + phi = arcos(1-2*(i+0.5)/N)
